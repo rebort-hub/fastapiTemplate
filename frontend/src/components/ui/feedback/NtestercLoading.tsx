@@ -21,14 +21,7 @@ type NtestercLoadingProps = {
   background?: string
 }
 
-/**
- * 加载遮罩：局部 / 全屏。局部用法：
- * ```tsx
- * <NtestercLoading spinning={loading}>
- *   <YourContent />
- * </NtestercLoading>
- * ```
- */
+
 export function NtestercLoading({
   spinning = false,
   fullscreen = false,
@@ -74,10 +67,7 @@ export function NtestercLoading({
   )
 }
 
-/**
- * 挂载在应用根节点，响应 `loadingService.show/hide`。
- * 与首屏 `index.html` 引导层同用弹跳方块。
- */
+
 export function NtestercLoadingHost() {
   const [visible, setVisible] = useState(loadingService.visible)
 

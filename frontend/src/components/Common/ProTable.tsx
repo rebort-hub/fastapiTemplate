@@ -32,7 +32,7 @@ export type ProColumn<T> = {
   defaultHidden?: boolean
   /**
    * 移动端卡片角色：
-   * - title：卡片主标题（默认取第一个非 actions 列）
+   * - title：卡片主标
    * - actions：底部操作区
    * - hide：移动端卡片不展示
    */
@@ -92,7 +92,7 @@ function cellValue<T>(col: ProColumn<T>, row: T, index: number): ReactNode {
 }
 
 /**
- * 企业级表格壳：标题栏 + 列设置 + 横/纵滚动 + 分页 + 移动端卡片。
+ * 企业级表格壳
  */
 export function ProTable<T>({
   title,

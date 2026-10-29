@@ -95,7 +95,7 @@ export function SettingsPanel({ open, onOpenChange }: SettingsPanelProps) {
   const { setTheme } = useTheme()
   const { settings, patchSettings, resetSettings } = useAppSettings()
 
-  /** 选择即生效并持久化（与 admin 一致） */
+
   const update = (partial: Partial<AppSettings>) => {
     patchSettings(partial)
     if (partial.themeMode) setTheme(partial.themeMode)

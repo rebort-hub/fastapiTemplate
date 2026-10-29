@@ -21,7 +21,7 @@ type ConfirmDialogProps = {
   onConfirm: () => void
 }
 
-/** 统一确认弹窗（删除等危险操作，替代 window.confirm） */
+/** 统一确认弹窗*/
 export function ConfirmDialog({
   open,
   onOpenChange,

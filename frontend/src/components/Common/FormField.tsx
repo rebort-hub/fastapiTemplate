@@ -3,7 +3,7 @@ import type { ReactNode } from "react"
 import { Label } from "@/components/ui/form"
 import { cn } from "@/utils"
 
-/** 表单字段容器：标签 + 控件 + 红色校验文案 */
+
 export function FormField({
   label,
   error,

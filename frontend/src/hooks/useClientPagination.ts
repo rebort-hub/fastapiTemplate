@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react"
 
 import type { ProTablePaginationProps } from "@/components/Common/ProTablePagination"
 
-/** 前端分页：对完整列表切片，并产出 ProTable.pagination 配置 */
+
 export function useClientPagination<T>(
   items: T[],
   defaultPageSize = 10,

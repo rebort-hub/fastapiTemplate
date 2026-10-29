@@ -1,6 +1,5 @@
 import { Monitor, Moon, Sun } from "lucide-react"
 import { useTranslation } from "react-i18next"
-
 import { type Theme, useTheme } from "@/components/theme-provider"
 import { Button } from "@/components/ui/action"
 import {
@@ -16,7 +15,6 @@ import {
 } from "@/components/ui/layout"
 
 type LucideIcon = React.FC<React.SVGProps<SVGSVGElement>>
-
 const ICON_MAP: Record<Theme, LucideIcon> = {
   system: Monitor,
   light: Sun,

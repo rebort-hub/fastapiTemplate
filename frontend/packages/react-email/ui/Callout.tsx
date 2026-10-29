@@ -1,13 +1,11 @@
 import { Section, Text } from "@react-email/components"
 
 type CalloutProps = React.PropsWithChildren
-
 export const Callout = ({ children }: CalloutProps) => (
   <Section style={calloutStyle}>{children}</Section>
 )
 
 type DetailProps = { label: string; value: string }
-
 export const Detail = ({ label, value }: DetailProps) => (
   <Text style={detailStyle}>
     <span style={labelStyle}>{label}</span>

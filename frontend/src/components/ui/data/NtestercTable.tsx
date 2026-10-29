@@ -7,7 +7,7 @@ function Table({
   containerClassName,
   ...props
 }: React.ComponentProps<"table"> & {
-  /** 外层滚动容器 class；ProTable 内传 flush 以去掉双边框 */
+
   containerClassName?: string
 }) {
   return (

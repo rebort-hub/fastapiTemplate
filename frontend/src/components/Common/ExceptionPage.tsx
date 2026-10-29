@@ -14,7 +14,7 @@ type ExceptionPageProps = {
 }
 
 /**
- * 异常页壳（对齐 admin FaException）：品牌 + 大号状态码 + 说明 + 操作
+ * 异常页壳
  */
 export function ExceptionPage({ code, className }: ExceptionPageProps) {
   const { t } = useTranslation()

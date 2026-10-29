@@ -1,15 +1,4 @@
-import {
-  Body,
-  Column,
-  Container,
-  Head,
-  Hr,
-  Html,
-  Preview,
-  Row,
-  Section,
-  Text,
-} from "@react-email/components"
+import {Body,Column,Container,Head,Hr,Html,Preview,Row,Section,Text,} from "@react-email/components"
 
 type LayoutProps = React.PropsWithChildren & {
   title: string
@@ -17,12 +6,7 @@ type LayoutProps = React.PropsWithChildren & {
   preview?: string
 }
 
-export const Layout = ({
-  project_name,
-  title,
-  preview,
-  children,
-}: LayoutProps) => {
+export const Layout = ({project_name,title,preview,children,}: LayoutProps) => {
   return (
     <Html lang="en" dir="ltr">
       <Head>

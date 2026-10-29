@@ -51,7 +51,7 @@ function flattenLeafPaths(items: NavMenuItem[]): NavItem[] {
   return result
 }
 
-/** 侧栏导航：优先后端动态菜单，失败时回退本地默认项 */
+
 export function useNavItems(): NavItem[] {
   const { t } = useTranslation()
   const { navItems, isError, isLoading } = useRouteMenus()

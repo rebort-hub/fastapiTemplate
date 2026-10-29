@@ -34,14 +34,14 @@ function puzzlePath(ctx: CanvasRenderingContext2D, x: number, y: number) {
 }
 
 function drawHole(ctx: CanvasRenderingContext2D, x: number, y: number) {
-  // 挖空缺口
+
   ctx.save()
   puzzlePath(ctx, x, y)
   ctx.globalCompositeOperation = "destination-out"
   ctx.fill()
   ctx.restore()
 
-  // 半透明遮罩，形成缺口阴影
+ 
   ctx.save()
   puzzlePath(ctx, x, y)
   ctx.fillStyle = "rgba(0,0,0,0.4)"

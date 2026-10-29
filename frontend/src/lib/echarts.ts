@@ -1,12 +1,4 @@
-/**
- * ECharts 按需注册
- *
- * 页面中请配合 `@/components/Common/EChart` 使用：
- * ```ts
- * import { EChart } from "@/components/Common/EChart"
- * import type { EChartsOption } from "@/lib/echarts"
- * ```
- */
+
 import * as echarts from "echarts/core"
 import {
   BarChart,

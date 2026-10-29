@@ -68,7 +68,6 @@ export function WorkTab() {
     return {
       path: context.path,
       closable,
-      // 对齐 web：有多个可关闭标签，或在固定页上仍可关掉其它页
       canCloseOther: closableCount > 1 || (fixed && closableCount > 0),
       canCloseLeft: hasClosableLeft,
       canCloseRight: hasClosableRight,

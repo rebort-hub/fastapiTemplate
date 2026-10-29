@@ -1,7 +1,6 @@
 import { Button } from "@react-email/components"
 
 type ButtonProps = React.PropsWithChildren & { href: string }
-
 export const LinkButton = ({ children, href }: ButtonProps) => (
   <Button href={href} style={buttonStyle}>
     {children}

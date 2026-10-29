@@ -22,7 +22,7 @@ const PAGE_SIZE = 48
 export function IconSelect({
   value = "",
   disabled,
-  placeholder = "请选择 Lucide 图标",
+  placeholder = "请选择图标",
   onChange,
 }: IconSelectProps) {
   const rootRef = useRef<HTMLDivElement>(null)
@@ -68,7 +68,7 @@ export function IconSelect({
       if (event.key === "Escape") setOpen(false)
     }
 
-    // 捕获阶段：Sheet 内空白区域也能收到
+
     document.addEventListener("pointerdown", onPointerDown, true)
     document.addEventListener("keydown", onKeyDown)
     return () => {

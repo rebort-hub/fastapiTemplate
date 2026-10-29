@@ -1,10 +1,4 @@
-/**
- * 全局 Loading 体系：
- * - `loadingService`：运行时全屏/命令式遮罩（`NtestercLoadingHost`）
- * - `appLoader`：刷新/首屏 HTML 引导层（`index.html` `#ntesterc-app-loader`）
- */
 
-/** 与 `index.html` 首屏节点 id 保持一致 */
 export const APP_LOADER_ELEMENT_ID = "ntesterc-app-loader"
 
 /** 首屏淡出后延迟移除节点 */
@@ -63,7 +57,7 @@ export function hideAppLoader(options: AppLoaderHideOptions = {}): void {
     }, APP_LOADER_FADE_MS)
   }
 
-  // 下一帧再淡出，确保首屏 React 已提交
+
   window.requestAnimationFrame(() => {
     if (delayMs <= 0) {
       run()
@@ -73,9 +67,7 @@ export function hideAppLoader(options: AppLoaderHideOptions = {}): void {
   })
 }
 
-/**
- * 将首屏 loader 绑定到路由事件作为补充；主路径由 `AppLoaderDismiss` 负责。
- */
+
 export function bindAppLoader(router: RouterLike): () => void {
   const dismiss = () => hideAppLoader()
 
@@ -93,7 +85,7 @@ export function bindAppLoader(router: RouterLike): () => void {
   }
 }
 
-/** 首屏 / 应用引导 Loading API */
+
 export const appLoader = {
   elementId: APP_LOADER_ELEMENT_ID,
   hide: hideAppLoader,
