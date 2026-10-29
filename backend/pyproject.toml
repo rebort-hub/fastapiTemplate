@@ -1,0 +1,55 @@
+[project]
+name = "app"
+version = "0.2.0"
+description = ""
+requires-python = ">=3.14,<4.0"
+dependencies = [
+    "fastapi[standard]>=0.141.1,<1.0.0",
+    "python-multipart<1.0.0,>=0.0.27",
+    "email-validator<3.0.0.0,>=2.1.0.post1",
+    "pydantic>=2.13.5",
+    "emails>=1.1.2,<2.0",
+    "jinja2<4.0.0,>=3.1.4",
+    "alembic>=1.19.1,<2.0.0",
+    "httpx<1.0.0,>=0.25.1",
+    "psycopg[binary]>=3.3.6,<4.0.0",
+    "sqlmodel>=0.0.46,<1.0.0",
+    "pydantic-settings<3.0.0,>=2.2.1",
+    "sentry-sdk[fastapi]>=2.70.0,<3.0.0",
+    "pyjwt>=2.15.0,<3.0.0",
+    "pwdlib[argon2,bcrypt]>=0.3.1",
+    "typer>=0.15.0",
+    "loguru>=0.7.3,<1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy<3.0.0,>=1.8.0",
+    "ty>=0.0.25",
+    "ruff<1.0.0,>=0.16.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.mypy]
+strict = true
+exclude = ["venv", ".venv", "alembic"]
+
+[tool.ruff]
+target-version = "py314"
+exclude = ["alembic"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP", "ARG001", "T201"]
+ignore = ["E501", "B008", "W191", "B904"]
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.fastapi]
+entrypoint = "app.main:create_app"

@@ -1,0 +1,12 @@
+.vscode/*
+!.vscode/extensions.json
+.venv/
+node_modules/
+# Docker Compose 本地密钥（模板见 docker/.env.example）
+docker/.env
+
+backend/.venv/
+backend/app/frontend/
+*.tsbuildinfo
+*.
+.env

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "code": "admin",
+    "name": "管理员",
+    "available": true,
+    "description": null,
+    "data_scope": 4
+  },
+  {
+    "id": 2,
+    "code": "director",
+    "name": "董事长",
+    "available": true,
+    "description": null,
+    "data_scope": 4
+  },
+  {
+    "id": 3,
+    "code": "ops_lead",
+    "name": "运营主管",
+    "available": true,
+    "description": null,
+    "data_scope": 3
+  },
+  {
+    "id": 4,
+    "code": "ops_staff",
+    "name": "运营人员",
+    "available": true,
+    "description": null,
+    "data_scope": 1
+  }
+]

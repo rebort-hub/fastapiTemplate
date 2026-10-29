@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Full Stack FastAPI Project</title>
+    <style>
+      html {
+        background-color: #fafbfc;
+      }
+      html.dark {
+        background-color: #141414;
+      }
+      .ntesterc-app-loader {
+        position: fixed;
+        inset: 0;
+        z-index: 9999999;
+        background: #fafbfc;
+      }
+      html.dark .ntesterc-app-loader {
+        background: #141414;
+      }
+      .ntesterc-app-loader .ntesterc-bounce-cube {
+        width: 50px;
+        height: 50px;
+        margin: 20% auto 0;
+        position: relative;
+        color: var(--primary, #1677ff);
+      }
+      .ntesterc-app-loader .ntesterc-bounce-cube::before {
+        content: "";
+        position: absolute;
+        top: 118%;
+        left: 0;
+        width: 100%;
+        height: 14%;
+        border-radius: 50%;
+        background: #000;
+        opacity: 0.1;
+        animation: ntesterc-bounce-cube-shadow 0.5s linear infinite;
+      }
+      .ntesterc-app-loader .ntesterc-bounce-cube::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 20%;
+        background: currentColor;
+        animation: ntesterc-bounce-cube-bounce 0.5s linear infinite;
+      }
+      html.dark .ntesterc-app-loader .ntesterc-bounce-cube::before {
+        background: #fff;
+        opacity: 0.15;
+      }
+      @keyframes ntesterc-bounce-cube-bounce {
+        17% {
+          border-bottom-right-radius: 3px;
+        }
+        25% {
+          transform: translateY(18%) rotate(22.5deg);
+        }
+        50% {
+          transform: translateY(36%) scale(1, 0.9) rotate(45deg);
+          border-bottom-right-radius: 40px;
+        }
+        75% {
+          transform: translateY(18%) rotate(67.5deg);
+        }
+        100% {
+          transform: translateY(0) rotate(90deg);
+        }
+      }
+      @keyframes ntesterc-bounce-cube-shadow {
+        0%,
+        100% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.2, 1);
+        }
+      }
+      .ntesterc-app-loader.is-done {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+      }
+    </style>
+    <script>
+      (function () {
+        try {
+          var settings = {}
+          var raw = localStorage.getItem("fastapi-app-settings")
+          if (raw) settings = JSON.parse(raw)
+          var theme =
+            settings.themeMode ||
+            localStorage.getItem("vite-ui-theme") ||
+            "light"
+          var dark =
+            theme === "dark" ||
+            (theme === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          if (dark) document.documentElement.classList.add("dark")
+          if (settings.primaryColor) {
+            document.documentElement.style.setProperty(
+              "--primary",
+              settings.primaryColor,
+            )
+          }
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div
+      id="ntesterc-app-loader"
+      class="ntesterc-app-loader"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+      aria-label="加载中"
+    >
+      <div class="ntesterc-bounce-cube"></div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

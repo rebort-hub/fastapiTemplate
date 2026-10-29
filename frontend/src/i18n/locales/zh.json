@@ -1,0 +1,257 @@
+{
+  "app": {
+    "name": "全栈 FastAPI 项目"
+  },
+  "language": {
+    "label": "语言",
+    "zh": "中文",
+    "en": "English"
+  },
+  "theme": {
+    "appearance": "外观",
+    "toggle": "切换主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "settingsPanel": {
+    "title": "主题设置",
+    "subtitle": "调整外观与布局偏好",
+    "themeStyle": "主题风格",
+    "menuLayout": "菜单布局",
+    "layoutVertical": "垂直",
+    "layoutHorizontal": "水平",
+    "layoutMixed": "混合",
+    "layoutDual": "双列",
+    "menuStyle": "菜单风格",
+    "menuSimple": "简约",
+    "menuCard": "卡片",
+    "menuOutline": "描边",
+    "menuImmersive": "沉浸",
+    "menuGlass": "毛玻璃",
+    "primaryColor": "系统主题色",
+    "boxStyle": "盒子样式",
+    "boxBorder": "边框",
+    "boxShadow": "阴影",
+    "containerWidth": "容器宽度",
+    "widthFull": "铺满",
+    "widthFixed": "定宽",
+    "basic": "基础配置",
+    "showBreadcrumb": "显示面包屑",
+    "showWorkTab": "多标签页",
+    "custom": "自定义",
+    "reset": "重置默认",
+    "save": "保存设置",
+    "resetSuccess": "已重置为默认设置",
+    "saveSuccess": "设置已保存"
+  },
+  "common": {
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "confirm": "确认",
+    "continue": "继续",
+    "na": "暂无",
+    "you": "你",
+    "user": "用户",
+    "actions": "操作",
+    "success": "成功！",
+    "error": "出错了！",
+    "errorGeneric": "发生错误，请稍后重试。",
+    "goHome": "返回首页",
+    "goBack": "返回上一页"
+  },
+  "validation": {
+    "invalidEmail": "邮箱格式不正确",
+    "passwordRequired": "请输入密码",
+    "passwordMin": "密码至少 8 位",
+    "passwordConfirmRequired": "请确认密码",
+    "passwordMismatch": "两次输入的密码不一致",
+    "confirmPasswordRequired": "请再次输入密码",
+    "fullNameRequired": "请输入姓名",
+    "titleRequired": "请输入标题"
+  },
+  "nav": {
+    "dashboard": "仪表盘",
+    "items": "项目",
+    "admin": "用户管理",
+    "userSettings": "个人设置",
+    "logOut": "退出登录"
+  },
+  "worktab": {
+    "refresh": "刷新",
+    "close": "关闭",
+    "closeOther": "关闭其他",
+    "closeLeft": "关闭左侧",
+    "closeRight": "关闭右侧",
+    "closeAll": "关闭全部"
+  },
+  "captcha": {
+    "clickTip": "点击完成拼图",
+    "dragTip": "拖动滑块，使图块与缺口重合",
+    "holdTip": "按住滑块，拖动完成拼图",
+    "success": "验证成功",
+    "fail": "验证失败，请重试",
+    "verified": "验证已通过",
+    "refresh": "刷新",
+    "required": "请先完成滑块验证"
+  },
+  "auth": {
+    "loginTitle": "登录 - FastAPI 模板",
+    "loginHeading": "登录你的账户",
+    "welcomeBack": "欢迎回来！",
+    "brandDesc": "开箱即用的全栈 FastAPI 管理模板，支持权限、动态能力与业务扩展",
+    "brandExtra": "基于 FastAPI + React 构建的现代化后台解决方案",
+    "email": "邮箱",
+    "password": "密码",
+    "emailPlaceholder": "user@example.com",
+    "passwordPlaceholder": "密码",
+    "forgotPassword": "忘记密码？",
+    "logIn": "登录",
+    "loginSuccess": "登录成功",
+    "registerSuccess": "注册成功",
+    "noAccount": "还没有账户？",
+    "signUp": "注册",
+    "signupTitle": "注册 - FastAPI 模板",
+    "signupHeading": "创建账户",
+    "fullName": "姓名",
+    "fullNamePlaceholder": "用户",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "确认密码",
+    "hasAccount": "已有账户？",
+    "logInLink": "登录",
+    "recoverTitle": "找回密码 - FastAPI 模板",
+    "recoverHeading": "找回密码",
+    "recoverSuccess": "密码找回邮件已发送",
+    "rememberPassword": "想起密码了？",
+    "resetTitle": "重置密码 - FastAPI 模板",
+    "resetHeading": "重置密码",
+    "newPassword": "新密码",
+    "newPasswordPlaceholder": "新密码",
+    "resetPassword": "重置密码",
+    "resetSuccess": "密码已更新"
+  },
+  "dashboard": {
+    "title": "仪表盘 - FastAPI 模板",
+    "greeting": "你好，{{name}} 👋",
+    "welcome": "欢迎回来，很高兴再次见到你！"
+  },
+  "items": {
+    "title": "项目 - FastAPI 模板",
+    "heading": "项目",
+    "subtitle": "创建和管理你的项目",
+    "emptyTitle": "你还没有任何项目",
+    "emptySubtitle": "添加一个新项目开始使用",
+    "addItem": "添加项目",
+    "editItem": "编辑项目",
+    "deleteItem": "删除项目",
+    "addDescription": "填写以下信息以添加新项目。",
+    "editDescription": "在下方更新项目信息。",
+    "deleteDescription": "该项目将被永久删除，此操作无法撤销，确定继续吗？",
+    "titleLabel": "标题",
+    "descriptionLabel": "描述",
+    "titlePlaceholder": "标题",
+    "descriptionPlaceholder": "描述",
+    "noDescription": "无描述",
+    "copyId": "复制 ID",
+    "createdSuccess": "项目创建成功",
+    "updatedSuccess": "项目更新成功",
+    "deletedSuccess": "项目已删除",
+    "columns": {
+      "id": "ID",
+      "title": "标题",
+      "description": "描述"
+    }
+  },
+  "admin": {
+    "title": "用户管理 - FastAPI 模板",
+    "heading": "用户",
+    "subtitle": "管理用户账户与权限",
+    "addUser": "添加用户",
+    "editUser": "编辑用户",
+    "deleteUser": "删除用户",
+    "addDescription": "填写以下表单以添加新用户。",
+    "editDescription": "在下方更新用户信息。",
+    "deleteDescription": "该用户关联的所有项目也将被永久删除，此操作无法撤销，确定继续吗？",
+    "setPassword": "设置密码",
+    "isSuperuser": "超级管理员？",
+    "isActive": "是否启用？",
+    "fullNamePlaceholder": "姓名",
+    "createdSuccess": "用户创建成功",
+    "updatedSuccess": "用户更新成功",
+    "deletedSuccess": "用户已删除",
+    "columns": {
+      "fullName": "姓名",
+      "email": "邮箱",
+      "role": "角色",
+      "status": "状态",
+      "superuser": "超级管理员",
+      "regularUser": "普通用户",
+      "active": "启用",
+      "inactive": "禁用"
+    }
+  },
+  "settings": {
+    "title": "设置 - FastAPI 模板",
+    "heading": "个人设置",
+    "subtitle": "管理你的账户信息与偏好",
+    "tabs": {
+      "profile": "我的资料",
+      "password": "密码",
+      "danger": "危险操作"
+    },
+    "userInfo": {
+      "heading": "基本信息",
+      "fullName": "姓名",
+      "email": "邮箱",
+      "updatedSuccess": "用户信息已更新"
+    },
+    "changePassword": {
+      "heading": "修改密码",
+      "currentPassword": "当前密码",
+      "newPassword": "新密码",
+      "confirmPassword": "确认密码",
+      "updatePassword": "更新密码",
+      "updatedSuccess": "密码已更新"
+    },
+    "deleteAccount": {
+      "heading": "删除账户",
+      "description": "永久删除你的账户及所有关联数据。",
+      "button": "删除账户",
+      "dialogTitle": "需要确认",
+      "dialogBody1": "你的账户数据将被永久删除。",
+      "dialogBody2": "如果确定继续，请点击「确认」。此操作无法撤销。",
+      "deletedSuccess": "账户已成功删除"
+    }
+  },
+  "error": {
+    "title": "错误",
+    "heading": "出错了！",
+    "message": "发生了一些问题，请稍后重试。"
+  },
+  "notFound": {
+    "heading": "页面未找到",
+    "message": "你访问的页面不存在。"
+  },
+  "exceptionPage": {
+    "401": "抱歉，您尚未登录或登录已失效。",
+    "403": "抱歉，您无权访问该页面。",
+    "404": "抱歉，您访问的页面不存在。",
+    "500": "抱歉，服务器出错了。",
+    "gohome": "返回首页",
+    "goBack": "返回上一页"
+  },
+  "table": {
+    "noResults": "暂无数据",
+    "showing": "显示第 {{from}} 至 {{to}} 条，共 {{total}} 条",
+    "rowsPerPage": "每页行数",
+    "pageOf": "第 {{page}} / {{total}} 页",
+    "firstPage": "第一页",
+    "prevPage": "上一页",
+    "nextPage": "下一页",
+    "lastPage": "最后一页",
+    "columnSettings": "列设置",
+    "toggleColumns": "显示列"
+  }
+}
